@@ -96,13 +96,21 @@ function factor(num) {
 
 console.log(factor(8));
 
-console.log(2**3);
+console.log(2 ** 3);
 
 
-console.log(0/0);
+console.log(0 / 0);
 console.log(NaN - 1);
 
 
-let heii = 86
-heii *= 2   
+let heii = 87
+// heii *= 2
+heii %= 2
+
 console.log(heii);
+
+if (heii == 0) {
+    console.log("even");
+} else {
+    console.log("odd");
+}

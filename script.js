@@ -114,3 +114,31 @@ if (heii == 0) {
 } else {
     console.log("odd");
 }
+
+let arr = 10
+arr++
+console.log(arr);
+console.log(arr + 1);
+console.log(++arr);
+
+a = null
+console.log(a);
+
+
+
+
+console.log("Yhn se ");
+console.log("new ");
+// console.log();
+// console.log();
+
+let sum = (a, b) => {
+    console.log(a + b);
+}
+
+let calculate = (a, b, sumcall) => {
+    // console.log();
+    sumcall(a, b)
+}
+
+calculate(1, 2, sum)

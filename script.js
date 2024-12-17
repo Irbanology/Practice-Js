@@ -161,7 +161,7 @@ for (var i = 0; i < d.childNodes.length; i++) {
     }
     if (pCounter === 2) {
         d.childNodes[i].innerHTML = "All his men.";
-        console.log(pCounter);
+        // console.log(pCounter);
         break;
     }
 }

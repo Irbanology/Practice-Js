@@ -129,16 +129,39 @@ console.log(a);
 
 console.log("Yhn se ");
 console.log("new ");
-// console.log();
-// console.log();
+
+
+
+
+// CALL BACK
 
 let sum = (a, b) => {
     console.log(a + b);
 }
 
 let calculate = (a, b, sumcall) => {
-    // console.log();
     sumcall(a, b)
 }
 
-calculate(1, 2, sum)
+calculate(85 / 5, 556 / 566, (a, b) => {
+    console.log(a + b);
+
+})
+
+
+let d = document.getElementById("humpty");
+console.log(d);
+
+var pCounter = 0;
+
+for (var i = 0; i < d.childNodes.length; i++) {
+    if (d.childNodes[i].nodeType === 1) {
+        pCounter++;
+        console.log(pCounter);
+    }
+    if (pCounter === 2) {
+        d.childNodes[i].innerHTML = "All his men.";
+        console.log(pCounter);
+        break;
+    }
+}

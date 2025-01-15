@@ -1,3 +1,4 @@
+"use strict"
 // //user defined function
 // function foo (name){
 //     alert('hello '+ name)
@@ -121,8 +122,8 @@ console.log(arr);
 console.log(arr + 1);
 console.log(++arr);
 
-a = null
-console.log(a);
+// a = null
+// console.log(a);
 
 
 
@@ -145,23 +146,34 @@ let calculate = (a, b, sumcall) => {
 
 calculate(85 / 5, 556 / 566, (a, b) => {
     console.log(a + b);
-
 })
 
+// NEXT SIBLING
 
 let d = document.getElementById("humpty");
-console.log(d);
+console.log(`This: ${d.nextSibling}`);
 
-var pCounter = 0;
+// var pCounter = 0;
 
-for (var i = 0; i < d.childNodes.length; i++) {
-    if (d.childNodes[i].nodeType === 1) {
-        pCounter++;
-        console.log(pCounter);
-    }
-    if (pCounter === 2) {
-        d.childNodes[i].innerHTML = "All his men.";
-        // console.log(pCounter);
-        break;
-    }
+// for (var i = 0; i < d.childNodes.length; i++) {
+//     if (d.childNodes[i].nodeType === 1) {
+//         pCounter++;
+//         console.log(pCounter);
+//     }
+//     if (pCounter === 2) {
+//         d.childNodes[i].innerHTML = "All his men.";
+//         // console.log(pCounter);
+//         break;
+//     }
+// }
+function one() {
+    return 1
 }
+function two() {
+    return one() + one()
+}
+function three() {
+    let ans = two() + one()
+    console.log(ans);
+}
+three()
